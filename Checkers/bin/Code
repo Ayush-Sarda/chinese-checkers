@@ -1,0 +1,159 @@
+/* public void mouseClicked(MouseEvent e)
+  {
+    x = e.getX();
+    y = e.getY();
+    System.out.println("val "+ValueAtMouseClick.getVal());
+   /* System.out.println("Player "+ PlayerTurn.player+" turn");
+    System.out.println("correct move "+Movement.correctMove);
+    System.out.println("jump "+Movement.jump);
+    System.out.println(Movement.click1+" "+Movement.click2);
+	System.out.println("values "+Movement.val1+" "+Movement.val2);
+    if(!Start)
+    	repaint();
+    else if(Movement.correctMove) {
+    	repaint();
+    	Movement.correctMove=false;
+    	//refresh =true;
+    }
+    
+    
+
+  }
+  public int xVal() {
+	  return x;
+  }
+  
+  public int yVal() {
+	  return y;
+  }
+  
+  public void mouseEntered(MouseEvent e)
+  {
+  }
+  public void mouseExited(MouseEvent e)
+  {
+  }
+
+  public void mouseMoved(MouseEvent e)
+  {
+  }
+  public void mouseDragged(MouseEvent e)
+  {
+  }
+  public void paint(Graphics g)
+  {	  
+	 
+	  
+	 // if(!Start) {
+		  g.setColor(new Color(106,75,53));
+		  g.fillRect(10, 10, 600,600);
+		  g.setColor(new Color(193,173,158));
+		  //g.fillOval(267, 75, 25, 25);
+		  //g.fillOval(252, 100, 25, 25);
+		  for(int i=0;i<Checkers.board.length;i++) {
+		    	for(int j=0;j<Checkers.board[i].length;j++) {
+		    		if(Checkers.board[i][j]=='*' || (Checkers.board[i][j]>=48 && Checkers.board[i][j]<=53 )) {
+		    			g.fillOval(87+15*j, 75+25*i, 25, 25);
+		    		}
+		    	}
+		    	
+		  }
+		  
+		  //g.setColor(Color.black);
+		  for(int i=0;i<10;i++) {
+			  g.fillOval(200+i, 150-i, 15, 15);
+			  //g.fillOval(71, 69, 15, 15);
+		  }
+		
+	 // }
+	  Start=true;
+			
+		    g.setFont(new Font("Monospaced", Font.BOLD, 30));
+		    g.setColor(c);
+		    //g.fillOval(270, 78, 19, 19);
+		    //g.fillOval(285, 103, 19, 19);
+		    for(int i=0;i<Checkers.board.length;i++) {
+		    	for(int j=0;j<Checkers.board[i].length;j++) {
+		    		data[0]=Checkers.board[i][j];
+		    		switch(data[0]) {
+		    		case '0':
+		    			data[0]='*';
+		    			c=Color.red;
+		    			g.setColor(c);
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;
+		    			
+		    		case '1':
+		    			data[0]='*';
+		    			c=Color.yellow;
+		    			g.setColor(c);
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;	
+		    			
+		    		case '2':
+		    			data[0]='*';
+		    			c=Color.gray;
+		    			g.setColor(new Color(204,132,0));
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;
+		    			
+		    		case '3':
+		    			data[0]='*';
+		    			c=Color.blue;
+		    			g.setColor(c);
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;
+		    			
+		    		case '4':
+		    			data[0]='*';
+		    			c=Color.green;
+		    			g.setColor(c);
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;
+		    			
+		    		case '5':
+		    			data[0]='*';
+		    			c=Color.cyan;
+		    			g.setColor(c);
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;
+		    		
+		    		case '*':
+		    			data[0]=0;
+		    			//c=Color.white;
+		    			g.setColor(new Color(193,173,158));
+		    			g.fillOval(90+15*j, 78+25*i, 19, 19);
+		    			break;
+		    			
+		    		case ' ':
+		    			//data[0]='*';
+		    			//c=Color.orange;
+		    			g.setColor(c);
+		    			break;
+		    		}
+		           // g.drawChars(data, 0, data.length, 90+15*j,100+25*i);
+		    		
+		            //g.drawString(x + "," + y,  x+10, y -10);
+		    	}
+		    }	
+	    
+	/*}
+	else {
+		g.drawString(x + "," + y,  x+10, y -10);
+ 	}
+  }
+  
+@Override
+public void mousePressed(MouseEvent e) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void mouseReleased(MouseEvent e) {
+	// TODO Auto-generated method stub
+	
+}*/
+  
+  
+  
